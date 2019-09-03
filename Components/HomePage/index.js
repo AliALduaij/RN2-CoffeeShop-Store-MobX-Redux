@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { View } from "react-native";
 
+import AppContainer from "../../navigation/index";
+
 // NativeBase Components
 import { Container, Header } from "native-base";
 
@@ -19,7 +21,7 @@ class HomePage extends Component {
       <Container style={styles.transparent}>
         <View style={styles.overlay} />
         <Header style={styles.transparent} />
-        <CoffeeCart />
+        <AppContainer />
       </Container>
     );
   }
